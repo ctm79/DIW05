@@ -9,22 +9,31 @@
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" type="text/css" href="./css/tarea05.css" title="style" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    
     -->
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/custom.css">
     </head>
 <body>
-    <div >
+    <div class="jumbotron bg-info text-center">
+      <div class="clearfix">
+        <div class="float-right" >
+          <a class="px-2" href="#contacto"><i class="fas fa-cloud" ></i></a>
+          <a class="px-2" href="#contacto"><i class="fas fa-cloud" ></i></a>
+          <a class="px-2" href="#contacto"><i class="fas fa-cloud" ></i></a>        
+        </div>
+      </div>
         <h1>Regular Página Prueba</h1>
         <p>Esto es una prueba</p>
+        
     </div>
     <!--
       Navegación
     -->
-    <nav class="navbar navbar-expand-sm bg-info navbar-light sticky-top">
+    <nav class="navbar navbar-expand-sm bg-info navbar-light sticky-top ">
+      
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -34,24 +43,25 @@
             <a class="nav-link" href="#">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Sobre mi</a>
+            <a class="nav-link" href="#sobremi">Sobre mi</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Cualidades</a>
+            <a class="nav-link" href="#cualidades">Cualidades</a>
           </li>   
           <li class="nav-item">
-            <a class="nav-link" href="#">Curriculum</a>
+            <a class="nav-link" href="#cv">Curriculum</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Premios</a>
+            <a class="nav-link" href="#premios">Premios</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Aptitudes</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contacto</a>
+            <a class="nav-link" href="#contacto">Contacto</a>
           </li>  
         </ul>
+        
       </div>  
     </nav>
     <!--
@@ -82,9 +92,33 @@
       </div>
     </div>
     <!--
+      Sobre mi
+    -->
+    <div id="sobremi" class="container py-3 my-3 bg-info">
+      <h1>Sobre mi</h1>
+      <div class="container row">
+        <div class="card col-sm-5" >
+          <img class="card-img-top" src="./img/avatar1.png" alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title">John Doe</h4>
+            <p class="card-text">Some example text.</p>
+            <a href="#" class="btn btn-primary">See Profile</a>
+          </div>
+        </div> 
+        <div class="col-sm-7">
+          <h3>Column 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+        </div> 
+      </div>
+    </div>
+
+
+    <!--
       Cualidades
     -->
-    <div class="container">
+    <div id="cualidades" class="container py-3 my-3 bg-warning">
+      <h1>Cualidades</h1>
       <div class="row">
         <div class="col-sm-4">
           <h3>Column 1</h3>
@@ -104,32 +138,161 @@
       </div>
     </div>
     <!--
+      CV
+    -->
+    <div id="cv" class="container py-3 my-3 bg-danger">
+      <h1>Curriculum</h1>
+      <div class="container">
+        <h3>Experiencia laboral</h3>
+        <div class="row my-1">
+          <div class="col-md-3 bg-primary ">
+            <p>March 2016 - Present</p>
+            <div class="h5">CreativeM</div>
+          </div>
+          <div class="col-md-9 bg-success" >
+            <div class="h5">Front End Developer</div>
+            <p>Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis, tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel eleifend primis lectus quisque cubilia sed mauris. Lacinia porta vestibulum diam integer quisque eros pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam pretium molestie ultricies sollicitudin dui.</p>
+          </div>
+        </div>
+        <div class="row my-1">
+          <div class="col-md-3 bg-primary ">
+            <p>March 2016 - Present</p>
+            <div class="h5">CreativeM</div>
+          </div>
+          <div class="col-md-9 bg-success" >
+            <div class="h5">Front End Developer</div>
+            <p>Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis, tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel eleifend primis lectus quisque cubilia sed mauris. Lacinia porta vestibulum diam integer quisque eros pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam pretium molestie ultricies sollicitudin dui.</p>
+          </div>
+        </div>
+
+        <h3>Formación educativa</h3>
+        <div class="row my-1">
+          <div class="col-md-3 bg-primary ">
+            <p>March 2016 - Present</p>
+            <div class="h5">CreativeM</div>
+          </div>
+          <div class="col-md-9 bg-success" >
+            <div class="h5">Front End Developer</div>
+            <p>Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis, tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel eleifend primis lectus quisque cubilia sed mauris. Lacinia porta vestibulum diam integer quisque eros pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam pretium molestie ultricies sollicitudin dui.</p>
+          </div>
+        </div>
+        <div class="row my-1">
+          <div class="col-md-3 bg-primary ">
+            <p>March 2016 - Present</p>
+            <div class="h5">CreativeM</div>
+          </div>
+          <div class="col-md-9 bg-success" >
+            <div class="h5">Front End Developer</div>
+            <p>Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis, tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel eleifend primis lectus quisque cubilia sed mauris. Lacinia porta vestibulum diam integer quisque eros pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam pretium molestie ultricies sollicitudin dui.</p>
+          </div>
+        </div>
+        
+          <!--
+          <div class="card">
+            <div class="row">
+              <div class="col-md-3 bg-primary">
+                <div class="card-body">
+                  <p>March 2016 - Present</p>
+                  <div class="h5">CreativeM</div>
+                </div>
+              </div>
+              <div class="col-md-9">
+                <div class="card-body">
+                  <div class="h5">Front End Developer</div>
+                  <p>Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis, tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel eleifend primis lectus quisque cubilia sed mauris. Lacinia porta vestibulum diam integer quisque eros pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam pretium molestie ultricies sollicitudin dui.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          -->
+        </div>
+    </div>
+    
+    <!--
+      Premios
+    -->
+    <div id="premios" class="container py-3 my-3 bg-success">
+      <h1>Premios</h1>
+      <p>The .card-deck class creates an <strong>equal height and width</strong> grid of cards. The layout will automatically adjust as you insert more cards.</p>
+      <p>In this example we have added extra content to the first card, to make it taller. Notice how the other cards follow.</p>
+      <p><strong>Note:</strong> The cards are displayed vertically on small screens (less than 576px):</p>
+      <div class="card-deck">
+        <div class="card bg-primary">
+          <div class="card-body text-center">
+            <p class="card-text">Some text inside the first card</p>
+          </div>
+        </div>
+        <div class="card bg-warning">
+          <div class="card-body text-center">
+            <p class="card-text">Some text inside the second card</p>
+          </div>
+        </div>
+        <div class="card bg-success">
+          <div class="card-body text-center">
+            <p class="card-text">Some text inside the third card</p>
+          </div>
+        </div>
+        <div class="card bg-danger">
+          <div class="card-body text-center">
+            <p class="card-text">Some text inside the fourth card</p>
+          </div>
+        </div>  
+      </div>
+    </div>
+    
+    
+    <!--
       Contacto
     -->
     <form> 
-      <div class="container">
+      <div id="contacto" class="container py-3 my-3 bg-primary text-white">
+        <h1 >Contacto</h1>
         <div class="form-group">
-          <label for="usuario">Usuario</label> 
-          <input class="form-control" type="text" id=usuario placeholder="Nombre de usuario"> 
+          <label for="nombre">Nombre</label> 
+          <input class="form-control" type="text" id=nombre placeholder="Tu nombre"> 
         </div>
         <div class="form-group">
-          <label for="pass">Contraseña</label> 
-          <input class="form-control" type="text" id=pass placeholder="Contraseña">
+          <label for="maik">Correo electrónico</label> 
+          <input class="form-control" type="text" id=mail placeholder="tu_mail@mail.com">
         </div>
         <div class="form-group">
           <label for="comment">Comment:</label>
           <textarea class="form-control" rows="5" id="comment"></textarea>
         </div> 
         <div class="form-group">
-          <button type="submit">Log in</button> 
+          <button type="submit">Enviar</button> 
         </div>
       </div>
     </form>
+
+    <!--
+      Pie
+    -->
+    
+      
+      <footer class="container bg-danger">
+        <div class="clearfix">
+          <div class="float-right">ctm2020</div>
+          <div class="float-left" >
+            <a class="px-2" href="#contacto"><i class="fas fa-cloud" ></i></a>
+            <a class="px-2" href="#contacto"><i class="fas fa-cloud" ></i></a>
+            <a class="px-2" href="#contacto"><i class="fas fa-cloud" ></i></a>        
+          </div>
+        </div>
+        
+      </footer>
+
+    
 
     
     <script type="text/javascript" src="./js/jquery.min.js"></script>
     <script src="./js/popper.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
+    <!--
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    -->
     
 </body>
 </html>
