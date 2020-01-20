@@ -5,7 +5,17 @@ a:link {
   color: white;
 }
 
-nav {
+.nav-link {
     color: white;
 
+}
+
+.jumbotron  {
+  margin-bottom: 0px;
+  border-radius: 0px;
+}
+
+.navbar-link {
+  color:white;
+  
 }
