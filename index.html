@@ -6,26 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge firefox">
     <title>Document</title>
     <!--
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" type="text/css" href="./css/tarea05.css" title="style" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    
+      Enlaces a css y componentes de bootstrap
     -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet"  type="text/css" href="./css/custom.css" title="style">
-    
-    
-    </head>
+</head>
+<!-- Añadido scroll-spy para detectar los cambios de sección-->
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
-    <div class="jumbotron bg-info text-light text-center" >
+    <div id="inicio" class="jumbotron bg-info text-light text-center" >
       <div class="clearfix">
         <div class="float-right" >
-          <h3>
+          <p class="h3">
             <a class="px-2" href="#contacto"><i class="fab fa-twitter-square text-white"></i></a>
             <a class="px-2" href="#contacto"><i class="fab fa-facebook-square text-white"></i></a>
             <a class="px-2" href="#contacto"><i class="fab fa-instagram text-white" ></i></a>        
-          </h3>
+          </p>
           </div>
       </div>
         <p class="h1 text-white-50">Carlos Talavera Martinez</p>
@@ -33,7 +29,7 @@
         
     </div>
     <!--
-      Navegación
+      Menú de Navegación
     -->
     <nav class="navbar navbar-expand-sm navbar-dark bg-info sticky-top ">
       
@@ -43,7 +39,7 @@
       <div class="collapse navbar-collapse" id="colap">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="#">Inicio</a>
+            <a class="nav-link" href="#inicio">Inicio</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#sobremi">Sobre mi</a>
@@ -64,11 +60,10 @@
             <a class="nav-link" href="#contacto">Contacto</a>
           </li>  
         </ul>
-        
       </div>  
     </nav>
     <!--
-      Carousel
+      Carousel de imágenes
     -->
     <div id="MiCarrusel" class="carousel slide" data-ride="carousel">
       <ul class="carousel-indicators">
@@ -78,24 +73,24 @@
       </ul>
       <div class="carousel-inner">
         <div id="item1" class="carousel-item active"> 
-          <img src="./img/coffee.jpg" class="d-block w-100">
+          <img src="./img/coffee.jpg" class="d-block w-100" alt="coffee" copyright="cc-0">
           <div class="carousel-caption d-none d-md-block">
-            <h4> Ejemplo de título</h4>
-            <p>Diapositiva 1</p>
+            <p class="h4 font-weight-bold font-italic">"Lo que importa verdaderamente en la vida no son los objetivos que nos marcamos, sino los caminos que seguimos para lograrlo."</p>
+            <p>Peter Bamm</p>
           </div>  
         </div>
         <div id="item2" class="carousel-item"> 
-          <img src="./img/painter.jpg" class="d-block w-100">
+          <img src="./img/painter.jpg" class="d-block w-100" alt="painter" copyright="cc-0">
           <div class="carousel-caption d-none d-md-block">
-            <h4> Ejemplo de título</h4>
-            <p>Diapositiva 1</p>
+            <p class="h4 font-weight-bold font-italic">"Vale más actuar exponiéndose a arrepentirse de ello, que arrepentirse de no haber hecho nada."</p>
+            <p>Giovanni Boccaccio</p>
           </div>  
         </div>
         <div id="item3" class="carousel-item"> 
-          <img src="./img/diagram.jpg" class="d-block w-100">
-          <div class="carousel-caption d-none d-md-block">
-            <h4> Ejemplo de título</h4>
-            <p>Diapositiva 1</p>
+          <img src="./img/diagram.jpg" class="d-block w-100" alt="diagram" copyright="cc-0">
+          <div class="carousel-caption d-none d-md-block text-secondary">
+            <p class="h4 font-weight-bold font-italic">"Cada día sabemos más y entendemos menos."</p>
+            <p>Albert Einstein</p>
           </div> 
         </div>
         <a class="carousel-control-prev" href="#MiCarrusel" data-slide="prev">
@@ -107,19 +102,20 @@
       </div>
     </div>
     <!--
-      Sobre mi
+      Secció "Sobre mi"
     -->
-    <div id="sobremi" class="container py-3 my-3 border border-info">
+    <div id="sobremi" class="container py-3 my-3 bg-white border border-info">
       
       <p class="h1 bg-info text-light font-italic pr-2">
         <i class="p-3 fas fa-male"></i>Sobre mi...
       </h1>
       <div class="container row">
+        <!-- Tarjeta para el perfil con imagen-->
         <div class="card col-sm-4" >
-          <img class="card-img-top img-fluid" src="./img/man.jpg" alt="Card image">
+          <img class="card-img-top img-fluid" src="./img/man.jpg" alt="Card image" copyright="cc-0">
           <div class="card-body">
             <h4 class="card-title">John Doe Torrefacto</h4>
-            <p class="card-text">Some example text.</p>
+            <p class="card-text">Información de contacto aquí</p>
             <a href="#" class="btn btn-info">Descarga mi CV</a>
           </div>
         </div> 
@@ -129,7 +125,7 @@
           <p>The languages only differ in their grammar, their pronunciation and their most common words. Everyone realizes why a new common language would be desirable: one could refuse to pay expensive translators.</p>
           <p>To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words. If several languages coalesce, the grammar of the resulting language is more simple and regular than that of the individual languages. The new common language will be more simple and regular than the existing European languages. It will be</p>
           <button class="btn btn-info" data-toggle="collapse" data-target="#vermas">ver más...</button>
-
+          <!-- Botón desplegable para mostrar más contenido-->
           <div id="vermas" class="collapse">
             <p>To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words. If several languages coalesce, the grammar of the resulting language is more simple and regular than that of the individual languages. The new common language will be more simple and regular than the existing European languages. It will be</p>
           </div> 
@@ -144,41 +140,41 @@
 
 
     <!--
-      Cualidades
+      Sección "Cualidades"
     -->
-    <div id="cualidades" class="container py-3 my-3 border border-success">
+    <div id="cualidades" class="container py-3 my-3 bg-white border border-success">
       <p class="h1 bg-success text-light font-italic pr-2 ">
         <i class="p-3 fas fa-bullhorn"></i>Cualidades
       </p>
       <div class="row text-center">
         <div class="col-sm-4 ">
           <h3 class="text-success">Compromiso</h3>
-          <img src="./img/compromiso.jpg" alt="Cinque Terre" width="200" height="200">
+          <img src="./img/compromiso.jpg" alt="Compromiso" width="200" height="200" copyright="cc-0">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
           <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
         </div>
         <div class="col-sm-4">
           <h3 class="text-success">Responsabilidad</h3>
-          <img src="./img/responsabilidad.jpg" alt="Cinque Terre" width="200" height="200">
+          <img src="./img/responsabilidad.jpg" alt="Cinque Terre" width="200" height="200" copyright="cc-0">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
           <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
         </div>
         <div class="col-sm-4">
           <h3 class="text-success">Proactividad</h3>   
-          <img src="./img/proactivo.jpg" alt="Cinque Terre" width="200" height="200">     
+          <img src="./img/proactivo.jpg" alt="Cinque Terre" width="200" height="200" copyright="cc-0">     
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
           <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
         </div>
       </div>
     </div>
     <!--
-      CV
+      Sección "Curriculum"
     -->
-    <div id="cv" class="container py-3 my-3 border border-primary">
+    <div id="cv" class="container py-3 my-3 bg-white border border-primary">
       <p class="h1 bg-primary text-white font-italic pr-2">
         <i class="p-3 fas fa-graduation-cap"></i>Curriculum</h1>
       <div class="container pt-3">
-        <img class="img-fluid d-none d-md-block" src="./img/work.jpg">
+        <img class="img-fluid d-none d-md-block" src="./img/work.jpg" alt="Trabajo" copyright="cc-0">
         <p class="h3 text-primary">Experiencia laboral</p>
         <div class="row my-1">
           <div class="col-md-3 bg-primary text-white">
@@ -202,7 +198,7 @@
         </div>
         <!-- separador de sección -->
         <div class="border-top my-3"></div>
-        <img class="img-fluid d-none d-md-block" src="./img/books.jpg">
+        <img class="img-fluid d-none d-md-block" src="./img/books.jpg" alt="Libros" copyright="cc-0">
         <p class="h3 text-info">Formación educativa</p>
         <div class="row my-1">
           <div class="col-md-3 bg-info text-white ">
@@ -224,106 +220,77 @@
             <p>Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis, tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus.</p>
           </div>
         </div>
-        
-          <!--
-          <div class="card">
-            <div class="row">
-              <div class="col-md-3 bg-primary">
-                <div class="card-body">
-                  <p>March 2016 - Present</p>
-                  <div class="h5">CreativeM</div>
-                </div>
-              </div>
-              <div class="col-md-9">
-                <div class="card-body">
-                  <div class="h5">Front End Developer</div>
-                  <p>Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis, tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel eleifend primis lectus quisque cubilia sed mauris. Lacinia porta vestibulum diam integer quisque eros pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam pretium molestie ultricies sollicitudin dui.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          -->
-        </div>
+      </div>
     </div>
     
     <!--
-      Premios
+      Sección "Premios"
     -->
-    <div id="premios" class="container py-3 my-3 border border-success 1px">
+    <div id="premios" class="container py-3 my-3 bg-white border border-success 1px">
       <p class="h1 bg-success text-white font-italic pr-2">
         <i class="p-3 fas fa-award"></i>Premios
       </h1>
       <div class="container pt-3"></div>
-        <p>The .card-deck class creates an <strong>equal height and width</strong> grid of cards. The layout will automatically adjust as you insert more cards.</p>
-        <p>In this example we have added extra content to the first card, to make it taller. Notice how the other cards follow.</p>
-        <p><strong>Note:</strong> The cards are displayed vertically on small screens (less than 576px):</p>
-      
+      <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+      <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
         <div class="card-deck d-flex justify-content-center mx-2 ">
           <div class="card bg-primary mx-2">
             <div class="card-body text-center">
               <p class="h2 text-white"><i class="fas fa-crown"></i></p>
-              <p class="card-text text-light font-weight-bold">"Ganandor premios Web Alicante"</p>
+              <p class="card-text text-light font-weight-bold">"Ganandor premios diseño artístico Harvard College "</p>
               <p class="card-text text-light font-italic ">Edicion 2018</p>
             </div>
           </div>
           <div class="card bg-warning mx-2 ">
             <div class="card-body text-center">
               <p class="h2 text-white"><i class="fas fa-crown"></i></p>
-              <p class="card-text text-light font-weight-bold">"Ganandor premios Web Alicante"</p>
-              <p class="card-text text-light font-italic ">Edicion 2018</p>
+              <p class="card-text text-light font-weight-bold">"Ganandor premios Programación Universidad Complutense"</p>
+              <p class="card-text text-light font-italic ">Edicion 2017</p>
             </div>
           </div>
           <div class="card bg-success mx-2">
             <div class="card-body text-center"><p class="h2 text-white"><i class="fas fa-crown"></i></p>
               <p class="card-text text-light font-weight-bold">"Ganandor premios Web Alicante"</p>
-              <p class="card-text text-light font-italic ">Edicion 2018</p>
+              <p class="card-text text-light font-italic ">Edicion 2014</p>
             </div>
           </div>
           <div class="card bg-danger mx-2">
             <div class="card-body text-center"><p class="h2 text-white"><i class="fas fa-crown"></i></p>
-              <p class="card-text text-light font-weight-bold">"Ganandor premios Web Alicante"</p>
-              <p class="card-text text-light font-italic ">Edicion 2018</p>
+              <p class="card-text text-light font-weight-bold">"Ganandor premios Diseño Web Princeton College"</p>
+              <p class="card-text text-light font-italic ">Edicion 2012</p>
             </div>
           </div>  
         </div>
       </div>
-
-    
-      
     </div>
     
-<!--
-      Aptitudes
+    <!--
+      Sección "Aptitudes"
     -->
-    <div id="aptitudes" class="container py-3 my-3 border border-warning 1px">
+    <div id="aptitudes" class="container py-3 my-3 bg-white border border-warning 1px">
       <p class="h1 bg-warning text-white font-italic pr-2">
         <i class="p-3 fas fa-child"></i>Aptitudes
       </p>
-      <div class="container pt-3"></div>
-      <ul class="list-group list-group-flush text-warning">
-        <li class="list-group-item">
-          <p class="h5">Adaptabilidad</p>
-          <p class="lead text-dark">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-        </li>
-        <li class="list-group-item">
-          <p class="h5">Trabajo en equipo</p>
-          <p class="lead text-dark">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
-        </li>
-        <li class="list-group-item">
-          <p class="h5">Creatividad</p>
-          <p class="lead text-dark">Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
-        </li>
-      </ul> 
-        
-        </div>
+      <div class="container pt-3">
+        <ul class="list-group list-group-flush text-warning">
+          <li class="list-group-item">
+            <p class="h5">Adaptabilidad</p>
+            <p class="lead text-dark">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+          </li>
+          <li class="list-group-item">
+            <p class="h5">Trabajo en equipo</p>
+            <p class="lead text-dark">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+          </li>
+          <li class="list-group-item">
+            <p class="h5">Creatividad</p>
+            <p class="lead text-dark">Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
+          </li>
+        </ul> 
       </div>
-
-    
-      
     </div>
       
     <!--
-      Contacto
+      Sección "Contacto"
     -->
     <form> 
       <div id="contacto" class="container py-3 my-3 bg-primary text-white">
@@ -347,40 +314,33 @@
           <textarea class="form-control" rows="5" id="comment"></textarea>
         </div> 
         <div class="form-group">
-          <button  class="btn bg-light text-info" type="submit">Enviar</button> 
+          <button  class="btn bg-light text-info mb-2" type="submit">Enviar</button> 
         </div>
       </div>
     </form>
 
     <!--
-      Pie
+      Footer
     -->
-    
-      
-      <footer class="container-fluid bg-info fixed-bottom">
-        <div class="clearfix">
-          <div class="float-right text-white">ctm2020</div>
-          <div class="float-left" >
-            <h4>
-              <a class="px-3" href="#contacto"><i class="fab fa-twitter-square text-white"></i></a>
-              <a class="px-3" href="#contacto"><i class="fab fa-facebook-square text-white"></i></a>
-              <a class="px-3" href="#contacto"><i class="fab fa-instagram text-white" ></i></a>        
-            </h4></div>
-        </div>
-        
-      </footer>
 
-    
+    <footer class="container-fluid bg-info fixed-bottom">
+      <div class="clearfix pt-2">
+        <div class="float-right text-white">CTM 2020</div>
+        <div class="float-left" >
+          <p class="h4">
+            <a class="px-3" href="#contacto"><i class="fab fa-twitter-square text-white"></i></a>
+            <a class="px-3" href="#contacto"><i class="fab fa-facebook-square text-white"></i></a>
+            <a class="px-3" href="#contacto"><i class="fab fa-instagram text-white" ></i></a>        
+          </p>
+      </div>
+    </footer>
 
-    
+    <!--
+      Scripts necesarios
+    -->        
     <script type="text/javascript" src="./js/jquery.min.js"></script>
     <script src="./js/popper.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
-    <!--
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    -->
     
-</body>
+  </body>
 </html>

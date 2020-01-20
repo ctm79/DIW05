@@ -1,3 +1,7 @@
+body {
+  background-image: url("../img/bricks.svg");
+}
+
 a:link {
     text-decoration: none;
     
@@ -19,3 +23,4 @@ a:link {
   color:white;
   
 }
+
